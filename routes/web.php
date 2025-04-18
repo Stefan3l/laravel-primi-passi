@@ -3,7 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+
+    $info = "testo di prova";
+
+    return view('home', compact('info'));
 });
 
 Route::get('/about', function () {
