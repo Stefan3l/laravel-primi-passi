@@ -8,5 +8,10 @@
 <body>
     <h1>About</h1>
     <h2>Seconda pagina</h2>
+    <div class="d-flex justify-content-center gap-4">
+            <a href="{{ route("home") }}" class="btn btn-primary">Home</a>
+            <a href="{{ route("about") }}" class="btn btn-primary">About</a>
+            <a  class="btn btn-primary" href="{{ route("contact") }}">Contact</a>
+        </div>
 </body>
 </html>

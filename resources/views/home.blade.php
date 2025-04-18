@@ -11,10 +11,13 @@
     <hr>
     <div class="container mt-5">
         <div class="d-flex justify-content-center gap-4">
-            <a href="about" class="btn btn-primary">About</a>
-            <a href="contact" class="btn btn-primary">Contact</a>
+            <a href="{{ route("home") }}" class="btn btn-primary">Home</a>
+            <a href="{{ route("about") }}" class="btn btn-primary">About</a>
+            <a  class="btn btn-primary" href="{{ route("contact") }}">Contact</a>
+            
         </div>
         <h1>{{$info}}</h1>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
